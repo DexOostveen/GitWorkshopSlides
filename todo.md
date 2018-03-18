@@ -2,6 +2,10 @@
 class: center, middle
 # _Git workshop_ 
 
+???
+Some note.
+
+
 ---
 ## INIT
 
@@ -72,37 +76,92 @@ git config --global user.name "John Doe"
 
 --
 
--   **d**
+-   **history graph**
+
+![](http://i.stack.imgur.com/OLmxz.png)
 
 ---
 
 ## Praktijk oefening
--   git clone https://github.com/DexOostveen/GitWorkshopSlides.git 
+-   git clone https://github.com/DexOostveen/GitWorkshop.git 
+
+---
+
+## Creeer repository
+- ```bash 
+git init (map naam) 
+```
+- ```bash
+ git clone [url]
+```
+---
+
+## Staging
+<!-- tracked vs untracked -->
+<!-- unmodified modified staged -->
+<!-- todo:plaatje toevoegen  -->
+<!-- git add [filename|*|*.ext] -->
+---
+
+## Commit
+<!-- git commit -m "comment" -->
+<!--  -->
+---
+## Commit guidelines:
+-   **kleine commits**
+-   **zinige beschrijvingen**
+-   **korte samenvatting + uitbreiding**
+-   **present tense**
+-   **issue nummer**
 
 
 ---
 
+## Branching and Merging
+<!-- show branches -->
+<!-- create branches -->
+<!-- switch branches  checkout-->
+<!-- merge branches -->
+<!-- merge conflicts -->
+---
+
+## Synchronisatie
+<!-- remotes -->
+<!-- add remotes -->
+<!-- server/master vs origin/master vs master -->
+
+<!-- push -->
+<!-- fetch -->
+<!-- pull -->
+
+---
+<!-- 
 ## GIT Basics
 -   **info**
 -   **wijziging opslaan**
 -   **branching**
-
-
----
-## Commit guidelines:
--   **kleine commits**
--   **pro**
--   **zinige namen**
--   **present tense**
--   **Issue nummer**
-
----
+-   **sync**
+--- -->
 
 ## Workflow
-
+<!-- init of clone -->
+<!-- edit -->
+<!-- status -->
+<!-- stage -->
+<!-- status -->
+<!-- commit -->
+<!-- log -->
+<!-- fetch -->
+<!-- status -->
+<!-- pull -->
+<!-- status -->
+<!-- push -->
+<!-- status -->
 ---
 
 ## Gitlab
+
+_**www.git.dev.itvitae.nl**_
 
 ---
 
