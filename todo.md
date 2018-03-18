@@ -19,12 +19,12 @@ Some note.
 
 --
 
-- Configuur naam en email
+- Configureren naam en email 
 
 ```bash
-git config --global user.email "john.doe@mailhost.com"
+$ git config --global user.email "john.doe@mailhost.com"
 
-git config --global user.name "John Doe"
+$ git config --global user.name "John Doe"
 ```
 
 ---
@@ -89,18 +89,26 @@ git config --global user.name "John Doe"
 ## Creeer repository
 - 
 ```bash 
-git init (map naam) 
+$ git init (map naam) 
 ```
-
 - 
 ```bash
- git clone [url]
+$ git clone [url]
 ```
 ### Praktijk oefening
 - 
 ```bash 
-git clone https://github.com/DexOostveen/GitWorkshop.git 
+$ git clone https://github.com/DexOostveen/GitWorkshop.git 
 ```
+---
+
+## Info
+- **commit historie**
+- git log
+- **huidige status**
+- git status
+- **zie wijzigingen**
+- git diff
 
 ---
 
@@ -108,24 +116,49 @@ git clone https://github.com/DexOostveen/GitWorkshop.git
 
 --
 
-- **tracked vs untracked**
+- **index**
+
 --
 
+- **tracked vs untracked**
+
+--
 - 
 ```bash
-git add [filename|*|*.ext]
+$ git add [filename|*|*.ext]
 ```
 --
- 
-.center[![](https://git-scm.com/figures/18333fig0201-tn.png)]
-<!-- ![](https://git-scm.com/book/en/v2/book/01-introduction/images/areas.png) -->
+
+- **.gitignore**
 
 ---
 
+
+class: center, middle
+<img  src="https://cdn-images-1.medium.com/max/1200/1*5Avk8LW4btU_1BWgsw1Pxw.png"   width="100%">
+
+<!-- <div style="{width= auto}">
+![](https://cdn-images-1.medium.com/max/1200/1*5Avk8LW4btU_1BWgsw1Pxw.png)
+</div> -->
+
+---
+
+class: center, middle
+
+.center[![](https://git-scm.com/book/en/v2/book/01-introduction/images/areas.png)]
+
+
+---
 ## Commit
 
+- **command line**
 ```bash
-git commit -m "comment"
+$ git commit -m "comment"
+```
+
+- **editor**
+```bash
+$ git config --global core.editor [editor command|notepad|code|vim]
 ```
 
 ---
@@ -147,15 +180,15 @@ git commit -m "comment"
 
 - **show branches** 
 ```bash
-git branch
+$ git branch
 ```
 - **create branches**
 ```bash
-git branch [name]
+$ git branch [name]
 ```
 - **switch branches**
 ```bash
-checkout [name]
+$ checkout [name]
 ```
 ---
 
@@ -163,8 +196,8 @@ checkout [name]
 
 - **merge branches**
 ```bash
-git checkout master
-git merge topic
+$ git checkout master
+$ git merge topic
 ```
 
 - **merge conflicts**
@@ -178,10 +211,9 @@ code on topic branch
 
 - **commit merge**
 ```bash
-git add *
-git commit -m "merge commit"
+$ git add *
+$ git commit -m "merge commit"
 ```
-
 
 ---
 
@@ -190,31 +222,37 @@ git commit -m "merge commit"
 <!-- add remotes -->
 <!-- server/master vs origin/master vs master -->
 
-<!-- push -->
-<!-- fetch -->
-<!-- pull -->
 
 ---
 
 ## Workflow
-<!-- init of clone -->
-<!-- edit -->
-<!-- status -->
-<!-- stage -->
-<!-- status -->
-<!-- commit -->
-<!-- log -->
-<!-- fetch -->
-<!-- status -->
-<!-- pull -->
-<!-- status -->
-<!-- push -->
-<!-- status -->
+### start
+init of clone
+
+### edit
+edit
+status
+stage
+status
+commit
+
+### sync
+fetch
+status
+pull
+status
+push
+status
+
+
 ---
 
 ## Gitlab
 
 _**www.git.dev.itvitae.nl**_
+
+
+_**www.gitlab.org**_
 
 ---
 
@@ -222,6 +260,7 @@ _**www.git.dev.itvitae.nl**_
 
 - **git status**
 - **git log**
+- **git diff**
 
 
 - **git init**
@@ -246,7 +285,12 @@ _**www.git.dev.itvitae.nl**_
 
 ## Verder Informatie
 
+### Refrences documenation
+- https://git-scm.com/docs/
+
+### Tutorials
 - https://www.atlassian.com/git
+- https://git-scm.com/docs/giteveryday
 
 !todo
 - trygit
