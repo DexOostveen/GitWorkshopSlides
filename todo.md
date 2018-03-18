@@ -39,6 +39,10 @@ git config --global user.name "John Doe"
 
 --
 
+-   **undo**
+
+--
+
 -   **bug fixing** 
 
 --
@@ -60,7 +64,7 @@ git config --global user.name "John Doe"
 
 --
 
--   **.git map**
+-   **repository(.git map)**
 
 --
 
@@ -82,47 +86,103 @@ git config --global user.name "John Doe"
 
 ---
 
-## Praktijk oefening
--   git clone https://github.com/DexOostveen/GitWorkshop.git 
-
----
-
 ## Creeer repository
-- ```bash 
+- 
+```bash 
 git init (map naam) 
 ```
-- ```bash
+
+- 
+```bash
  git clone [url]
 ```
+### Praktijk oefening
+- 
+```bash 
+git clone https://github.com/DexOostveen/GitWorkshop.git 
+```
+
 ---
 
 ## Staging
-<!-- tracked vs untracked -->
-<!-- unmodified modified staged -->
-<!-- todo:plaatje toevoegen  -->
-<!-- git add [filename|*|*.ext] -->
+
+--
+
+- **tracked vs untracked**
+--
+
+- 
+```bash
+git add [filename|*|*.ext]
+```
+--
+ 
+.center[![](https://git-scm.com/figures/18333fig0201-tn.png)]
+<!-- ![](https://git-scm.com/book/en/v2/book/01-introduction/images/areas.png) -->
+
 ---
 
 ## Commit
-<!-- git commit -m "comment" -->
-<!--  -->
+
+```bash
+git commit -m "comment"
+```
+
 ---
 ## Commit guidelines:
--   **kleine commits**
--   **zinige beschrijvingen**
--   **korte samenvatting + uitbreiding**
--   **present tense**
--   **issue nummer**
 
+-   **kleine commits**
+
+-   **zinige beschrijvingen**
+
+-   **korte samenvatting + uitbreiding**
+
+-   **present tense**
+
+-   **issue nummer**
 
 ---
 
-## Branching and Merging
-<!-- show branches -->
-<!-- create branches -->
-<!-- switch branches  checkout-->
-<!-- merge branches -->
-<!-- merge conflicts -->
+## Branching  
+
+- **show branches** 
+```bash
+git branch
+```
+- **create branches**
+```bash
+git branch [name]
+```
+- **switch branches**
+```bash
+checkout [name]
+```
+---
+
+## Merging
+
+- **merge branches**
+```bash
+git checkout master
+git merge topic
+```
+
+- **merge conflicts**
+```bash
+<<<<<<<<<<<<<< master
+code on master branch
+==============
+code on topic branch
+>>>>>>>>>>>>>> topic
+```
+
+- **commit merge**
+```bash
+git add *
+git commit -m "merge commit"
+```
+
+
 ---
 
 ## Synchronisatie
@@ -135,13 +195,6 @@ git init (map naam)
 <!-- pull -->
 
 ---
-<!-- 
-## GIT Basics
--   **info**
--   **wijziging opslaan**
--   **branching**
--   **sync**
---- -->
 
 ## Workflow
 <!-- init of clone -->
@@ -166,6 +219,7 @@ _**www.git.dev.itvitae.nl**_
 ---
 
 ## Basis Commandos
+
 - **git status**
 - **git log**
 
