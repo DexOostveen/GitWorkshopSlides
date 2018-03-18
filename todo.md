@@ -1,5 +1,5 @@
- 
 
+class: center, middle
 # _Git workshop_ 
 
 ---
