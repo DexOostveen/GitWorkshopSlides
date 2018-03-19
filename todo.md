@@ -20,11 +20,9 @@ Some note.
 --
 
 - Configureren naam en email 
-
 ```bash
 $ git config --global user.email "john.doe@mailhost.com"
-
-$ git config --global user.name "John Doe"
+$ git config --global user.name "John Doe" 
 ```
 
 ---
@@ -103,20 +101,44 @@ $ git clone https://github.com/DexOostveen/GitWorkshop.git
 ---
 
 ## Info
+
+--
+
 - **commit historie**
-- git log
+```bash
+$ git log
+$ git log --pretty=oneline
+$ git log --pretty=oneline --graph
+```
+
+--
+
 - **huidige status**
-- git status
+```bash
+$ git status
+```
+
+--
+
 - **zie wijzigingen**
-- git diff
+```bash
+$ git diff
+```
+
+--
+
+- **test run**
+```bash
+$ git [command] --dry-run
+```
 
 ---
 
 ## Staging
 
---
+<!-- --
 
-- **index**
+- **index** -->
 
 --
 
@@ -130,6 +152,18 @@ $ git add [filename|*|*.ext]
 --
 
 - **.gitignore**
+
+--
+
+- **staged**
+
+--
+
+- **unmodified**
+
+--
+
+- **modified**
 
 ---
 
