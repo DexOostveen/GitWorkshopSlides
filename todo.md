@@ -95,11 +95,17 @@ $ git config --global user.name "John Doe"
 ```bash 
 $ git init (map naam) 
 ```
+--
+
 - 
 ```bash
 $ git clone [url]
 ```
+--
+
 ### Praktijk oefening
+--
+
 - 
 ```bash 
 $ git clone https://git.dev.itvitae.nl/development/GitWorkshop.git 
@@ -318,11 +324,15 @@ template: sync
 
 ### remotes
 
+--
+
 - **show remotes**
 ```bash
 $ git remote
 $ git remote -v #verbose
 ```
+
+--
 
 - **add remotes**
 ```bash
@@ -330,12 +340,12 @@ $ git remote add [name] [url]
 $ git remote add origin "www.github.com/user/project.git"
 ```
 
+--
+
 - **inspect remote**
 ```bash
 $ git remote show [name] 
 ``` 
-
-<!-- #### server/master vs origin/master vs master -->
 
 ---
 
