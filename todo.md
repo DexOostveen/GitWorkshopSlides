@@ -1,10 +1,16 @@
-
 class: center, middle
+
 # _Git workshop_ 
 
 ???
 Some note.
 
+
+---
+
+class: center, middle
+
+![](https://i.imgur.com/qHtEnDf.jpg)
 
 ---
 ## INIT
@@ -132,6 +138,13 @@ $ git diff
 $ git [command] --dry-run
 ```
 
+--
+
+- **help**
+```bash
+$ git [command] -h
+```
+
 ---
 
 ## Staging
@@ -211,7 +224,9 @@ $ git config --global core.editor [editor command|notepad|code|vim]
 ```
 
 ---
-## Commit guidelines:
+## Commit guidelines
+
+--
 
 -   **kleine commits**
 
@@ -260,7 +275,6 @@ $ git branch -d [name]
 - **switch branches**
 ```bash
 $ git checkout [name]
-$ git branch [name]
 ```
 
 ---
@@ -296,11 +310,84 @@ $ git commit -m "merge commit"
 
 ---
 
+name: sync
 ## Synchronisatie
-<!-- remotes -->
-<!-- add remotes -->
-<!-- server/master vs origin/master vs master -->
 
+---
+template: sync
+
+### remotes
+
+- **show remotes**
+```bash
+$ git remote
+$ git remote -v #verbose
+```
+
+- **add remotes**
+```bash
+$ git remote add [name] [url]
+$ git remote add origin "www.github.com/user/project.git"
+```
+
+- **inspect remote**
+```bash
+$ git remote show [name] 
+``` 
+
+<!-- #### server/master vs origin/master vs master -->
+
+---
+
+template: sync
+ 
+
+### fetch
+
+--
+
+- fetch
+```bash
+$ git fetch [remote] # remote is optional
+$ git fetch origin
+```
+
+--
+
+- merge 
+```bash
+$ git merge origin/master
+```
+
+---
+![](https://git-scm.com/book/en/v2/images/remote-branches-2.png)
+
+---
+![](https://git-scm.com/book/en/v2/images/remote-branches-3.png)
+
+---
+
+template: sync
+
+### pull
+
+```bash
+$ git pull origin master # git pull [remote] [branch] default to origin and current branch respectively
+=
+$ git fetch
+$ git merge origin/master
+```
+---
+
+template: sync
+
+### push
+
+```bash
+$ git push
+$ git push [remote] [branch]
+$ git push origin master 
+```
 
 ---
 
@@ -311,31 +398,68 @@ name: workflow
 
 template: workflow
 ### start
-init of clone
+
+--
+
+- **init**
+```bash
+$ git init [folder]
+$ cd [folder]
+```
+
+--
+
+- **link existing repository**
+```bash
+$ git remote add origin [url]
+$ git push -u origin master
+```
+
+--
+
+- **clone**
+```bash
+$ git clone [url]
+$ cd [folder]
+```
 
 ---
 
 template: workflow
 
 ### edit
-edit
+<!-- edit
 status
 stage
 status
-commit
+commit -->
+
+```bash
+$ edit file.txt             # modify file
+$ git status                # see that file is changed
+$ git add [file.txt|*]      # stage file
+$ git status                # see that file is staged
+$ git commit -m "msg"       # commit changes
+$ git status                # see that file is now unmodified
+$ git log --pretty=oneline  # see new commit
+```
 
 ---
 
 template: workflow
 
 ### sync
-fetch
-status
-pull
-status
-push
-status
-
+ 
+```bash
+$ git fetch                 # get new commit from server if any
+$ git status                # check if there are new commits
+$ git pull                  # integrate new commits
+# if merge conflict resolve it
+$ git status                # check that they are integrated
+$ git log pretty=oneline    # see new commit in history
+$ git push                  # send new local commit to server
+$ git status                # check that 
+```
 
 ---
 
