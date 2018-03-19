@@ -102,7 +102,7 @@ $ git clone [url]
 ### Praktijk oefening
 - 
 ```bash 
-$ git clone https://github.com/DexOostveen/GitWorkshop.git 
+$ git clone https://git.dev.itvitae.nl/development/GitWorkshop.git 
 ```
 ---
 
