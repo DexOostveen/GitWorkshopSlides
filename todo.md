@@ -258,27 +258,27 @@ _**www.gitlab.org**_
 
 ## Basis Commandos
 
-- **git status**
-- **git log**
-- **git diff**
+- [**git status**](https://www.git-scm.com/docs/git-status)
+- [**git log**](https://www.git-scm.com/docs/git-log)
+- [**git diff**](https://www.git-scm.com/docs/git-diff)
 
 
-- **git init**
-- **git clone**
+- [**git init**](https://www.git-scm.com/docs/git-init)
+- [**git clone**](https://www.git-scm.com/docs/git-clone)
 
 
-- **git add**
-- **git commit**
+- [**git add**](https://www.git-scm.com/docs/git-add)
+- [**git commit**](https://www.git-scm.com/docs/git-commit)
 
 
-- **git checkout**
-- **git branch**
-- **git merge**
+- [**git checkout**](https://www.git-scm.com/docs/git-checkout)
+- [**git branch**](https://www.git-scm.com/docs/git-branch)
+- [**git merge**](https://www.git-scm.com/docs/git-merge)
 
 
-- **git push**
-- **git fetch**
-- **git pull**
+- [**git push**](https://www.git-scm.com/docs/git-push)
+- [**git fetch**](https://www.git-scm.com/docs/git-fetch)
+- [**git pull**](https://www.git-scm.com/docs/git-pull)
 
 
 ---
