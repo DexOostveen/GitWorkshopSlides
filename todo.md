@@ -136,10 +136,6 @@ $ git [command] --dry-run
 
 ## Staging
 
-<!-- --
-
-- **index** -->
-
 --
 
 - **tracked vs untracked**
@@ -152,6 +148,11 @@ $ git add [filename|*|*.ext]
 --
 
 - **.gitignore**
+
+--
+
+### File states
+
 
 --
 
@@ -185,10 +186,24 @@ class: center, middle
 ---
 ## Commit
 
+--
+
 - **command line**
+
+--
 ```bash
+$ git commit
 $ git commit -m "comment"
 ```
+--
+```bash
+$ git add *
+$ git commit
+=
+$ git commit -a
+```
+
+--
 
 - **editor**
 ```bash
@@ -200,11 +215,19 @@ $ git config --global core.editor [editor command|notepad|code|vim]
 
 -   **kleine commits**
 
+--
+
 -   **zinige beschrijvingen**
+
+--
 
 -   **korte samenvatting + uitbreiding**
 
--   **present tense**
+--
+
+-   **Tegenwoordige tijd**
+
+--
 
 -   **issue nummer**
 
@@ -212,27 +235,47 @@ $ git config --global core.editor [editor command|notepad|code|vim]
 
 ## Branching  
 
+--
+
 - **show branches** 
 ```bash
 $ git branch
 ```
+
+--
+
 - **create branches**
 ```bash
 $ git branch [name]
 ```
+
+--
+- **delete branches**
+```bash
+$ git branch -d [name]
+```
+
+--
+
 - **switch branches**
 ```bash
-$ checkout [name]
+$ git checkout [name]
+$ git branch [name]
 ```
+
 ---
 
 ## Merging
+
+--
 
 - **merge branches**
 ```bash
 $ git checkout master
 $ git merge topic
 ```
+
+--
 
 - **merge conflicts**
 ```bash
@@ -242,6 +285,8 @@ code on master branch
 code on topic branch
 >>>>>>>>>>>>>> topic
 ```
+
+--
 
 - **commit merge**
 ```bash
@@ -259,9 +304,18 @@ $ git commit -m "merge commit"
 
 ---
 
+name: workflow
 ## Workflow
+
+---
+
+template: workflow
 ### start
 init of clone
+
+---
+
+template: workflow
 
 ### edit
 edit
@@ -269,6 +323,10 @@ status
 stage
 status
 commit
+
+---
+
+template: workflow
 
 ### sync
 fetch
@@ -321,12 +379,10 @@ _**www.gitlab.org**_
 
 ### Refrences documenation
 - https://git-scm.com/docs/
+- https://git-scm.com/docs/giteveryday
 
 ### Tutorials
 - https://www.atlassian.com/git
-- https://git-scm.com/docs/giteveryday
-
-!todo
-- trygit
-- learn git branching
-- git documentatie
+- https://try.github.io/
+- https://learngitbranching.js.org/
+ 
