@@ -313,6 +313,27 @@ code on topic branch
 $ git add *
 $ git commit -m "merge commit"
 ```
+---
+name: branch-model
+## Branching Model
+---
+
+template: branch-model
+### master
+
+---
+template: branch-model
+### development
+.scale[ 
+    ![](http://nvie.com/img/main-branches@2x.png)
+     ]
+ 
+---
+
+template: branch-model
+### feature
+
+![](http://nvie.com/img/fb@2x.png)
 
 ---
 
