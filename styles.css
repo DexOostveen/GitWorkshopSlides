@@ -1,11 +1,15 @@
 
 .scale img{
-    width:100%;
+    /* width:100%; */
     height : 100%;
 }
 
 .scale{ 
     
     border: 2px solid black; 
-    height: 100px;
+     
+}
+
+.scale p{
+    height: 420px;
 }
