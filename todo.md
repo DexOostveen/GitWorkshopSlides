@@ -400,8 +400,8 @@ template: sync
 ### pull
 
 ```bash
-$ git pull origin master # git pull [remote] [branch] default to origin and current branch respectively
-=
+$ git pull origin master # git pull [remote] [branch]
+=                        # default to origin and current branch respectively
 $ git fetch
 $ git merge origin/master
 ```
