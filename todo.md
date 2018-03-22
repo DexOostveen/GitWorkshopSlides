@@ -108,7 +108,7 @@ $ git clone [url]
 
 - 
 ```bash 
-$ git clone https://git.dev.itvitae.nl/development/GitWorkshop.git 
+$ git clone http://git.dev.itvitae.nl/dex.oostveen/GitWorkshopProject.git 
 ```
 ---
 
