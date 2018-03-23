@@ -13,15 +13,42 @@ class: center, middle
 ![](https://i.imgur.com/qHtEnDf.jpg)
 
 ---
+
+## Commandline
+
+![](http://www.blikoontech.com/wp-content/uploads/2014/02/windowsMingwHelloWorldContents.png)
+
+---
+
+## Commandline
+
+- **$**
+
+--
+
+- **change directory**
+```bash
+$ cd [foldername]
+```
+--
+
+- **show directory**
+```bash
+$ dir
+```
+
+
+
+---
 ## INIT
 
 --
 
-- Download en installeer git van www.git-scm.com.
+- Download en installeer git van https://git-scm.com/downloads.
 
 --
 
-- Regel toegang tot Github/Gitlab.
+- Regel toegang tot Gitlab.
 
 --
 
@@ -493,7 +520,7 @@ $ git status                # check that
 
 ## Gitlab
 
-_**www.git.dev.itvitae.nl**_
+_**git.dev.itvitae.nl**_
 
 
 _**www.gitlab.org**_
